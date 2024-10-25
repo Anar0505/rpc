@@ -1,0 +1,84 @@
+body{
+    background-color: orange;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 50px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+border-radius: 10px;
+background-color: white;
+
+}
+.scoreboard{
+    padding: 30px 0;
+    display: flex;
+margin-bottom: 25px;
+}
+.scoreboard__win{
+    width: 75%;
+}
+.scoreboard__scoretable{
+display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 25%;
+    gap: 10px;
+}
+.scoreboard__scoretable p {
+    text-align: end;
+}
+.scoreboard__scoretable p span{
+    font-weight: bold;
+}
+
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    align-items: center;
+margin-bottom: 100px;}
+.options__move{
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: orange;
+    
+    cursor: pointer;
+    transition: 0.5s;
+}
+.options__move:hover{
+    scale: 1.12;
+}
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+    margin-bottom: 55px;
+}
+.whowin{
+    
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+height:100px;
+margin-bottom: 100px;
+}
+.whowin h1{
+    padding: 10px 30px;
+}

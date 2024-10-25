@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="paper.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard">
+        <div class="scoreboard__win"></div>
+        <div class="scoreboard__scoretable">
+          <p>Computer: <span id="computerscore"></span></p>
+          <p>You: <span id="yourscore"></span></p>
+        </div>
+      </div>
+      <div class="options">
+        <div class="options__move rock">Rock</div>
+        <div class="options__move paper">Paper</div>
+        <div class="options__move scissors">Scissors</div>
+      </div>
+      <div class="choices">
+        <div class="choices__you">You Choose <span id="yourchoice"></span></div>
+        <div class="choices__computer">
+          Computer Choose <span id="computerchoice"></span>
+        </div>
+      </div>
+      <div class="whowin"><h1 id="winner"></h1></div>
+    </div>
+
+    <script src="./scissors.js"></script>
+  </body>
+</html>
