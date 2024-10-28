@@ -77,8 +77,64 @@ margin-bottom: 100px;}
     display: flex;
     justify-content: center;
 height:100px;
-margin-bottom: 100px;
+margin-bottom: 50px;
 }
 .whowin h1{
     padding: 10px 30px;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+}
+#resetbttn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #resetbttn:hover {
+    background-color: #c82333;
+  }
+
+  @media (max-width: 768px) {
+    .options {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .options__move {
+        width: 150px; 
+        height: 150px;
+        font-size: 24px; 
+    }
+
+    .whowin {
+        font-size: 20px; 
+    }
+
+    .scoreboard__scoretable p {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; 
+    }
+
+    .whowin h1 {
+        font-size: 18px;
+    }
+
+    #resetbttn {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
 }
